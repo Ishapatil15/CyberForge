@@ -1,0 +1,21 @@
+name: Digital Footprints
+slug: digital-footprints
+category: OSINT
+difficulty: EASY
+points: 100
+description: |
+  Fictional aerospace research organization NexusForge left digital traces across public archives.
+  Correlate the website comment, social feed, and project metadata in nexusforge_osint.zip to locate the verification token.
+tags:
+  - osint
+  - correlation
+  - metadata
+flag_format: "CTF{...}"
+flag: "CTF{f00tpr1nt_c0rr3lat10n_succ3ss_104}"
+hints:
+  - text: "Find the username in website.html, then check metadata.txt for the verification token."
+    penalty: 10
+files:
+  - nexusforge_osint.zip
+learning_objective: "Learn open-source intelligence methodology by correlating usernames, comments, and file metadata."
+published: true

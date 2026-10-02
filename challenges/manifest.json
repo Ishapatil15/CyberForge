@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "hidden-header",
+    "flag": "CTF{h3ad3r_1nspect10n_mast3r}",
+    "file": "response.txt"
+  },
+  {
+    "slug": "parameter-hunt",
+    "flag": "CTF{und0cum3nted_param_leak_892}",
+    "file": "api_routes.json"
+  },
+  {
+    "slug": "broken-access",
+    "flag": "CTF{b0la_auth_m1sconf1g_7714}",
+    "file": "audit_traffic.json"
+  },
+  {
+    "slug": "suspicious-traffic",
+    "flag": "CTF{pcap_fl0w_analyz3d_4421}",
+    "file": "suspicious_traffic.pcap"
+  },
+  {
+    "slug": "memory-clue",
+    "flag": "CTF{m3m0ry_str1ngs_unv31l_993}",
+    "file": "memory_minidump.raw"
+  },
+  {
+    "slug": "incident-logs",
+    "flag": "CTF{l0g_c0rr3lat10n_d3t3ct3d_512}",
+    "file": "incident_logs.zip"
+  },
+  {
+    "slug": "classic-cipher",
+    "flag": "CTF{v1g3n3r3_c1ph3r_unl0ck3d_881}",
+    "file": "ciphertext.txt"
+  },
+  {
+    "slug": "weak-key",
+    "flag": "CTF{sm4ll_pr1m3s_br3ak_rsa_339}",
+    "file": "challenge_info.txt"
+  },
+  {
+    "slug": "encoding-chain",
+    "flag": "CTF{mult1_lay3r_d3c0d1ng_pr0}",
+    "file": "payload.txt"
+  },
+  {
+    "slug": "digital-footprints",
+    "flag": "CTF{f00tpr1nt_c0rr3lat10n_succ3ss_104}",
+    "file": "nexusforge_osint.zip"
+  },
+  {
+    "slug": "the-forgotten-document",
+    "flag": "CTF{d0cum3nt_arch1v3_unh1dd3n_782}",
+    "file": "audit_records.zip"
+  },
+  {
+    "slug": "crack-me",
+    "flag": "CTF{str1ngs_and_x0r_r3v3rs1ng_619}",
+    "file": "crackme.zip"
+  },
+  {
+    "slug": "hidden-logic",
+    "flag": "CTF{v4l1dat10n_l0g1c_d3c0d3d_941}",
+    "file": "hidden_logic.zip"
+  },
+  {
+    "slug": "image-secret",
+    "flag": "CTF{st3g0_png_chUnk_unc0v3r3d_215}",
+    "file": "cyber_artifact.png"
+  },
+  {
+    "slug": "strange-file",
+    "flag": "CTF{p0lygl0t_m4g1c_byt3s_f1x3d_608}",
+    "file": "mystery.bin"
+  }
+]

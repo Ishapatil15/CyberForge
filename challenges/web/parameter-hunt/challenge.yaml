@@ -1,0 +1,21 @@
+name: Parameter Hunt
+slug: parameter-hunt
+category: WEB
+difficulty: EASY
+points: 150
+description: |
+  A client-side service worker leaked an API endpoint schema.
+  Investigate the route definitions to discover an undocumented diagnostic parameter.
+tags:
+  - web
+  - api
+  - parameter-discovery
+flag_format: "CTF{...}"
+flag: "CTF{und0cum3nted_param_leak_892}"
+hints:
+  - text: "Search the schema for routes with debug or override parameters."
+    penalty: 15
+files:
+  - api_routes.json
+learning_objective: "Learn to audit OpenAPI/Swagger schema dumps to uncover unadvertised administrative parameters."
+published: true

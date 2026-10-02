@@ -1,0 +1,22 @@
+name: Encoding Chain
+slug: encoding-chain
+category: CRYPTOGRAPHY
+difficulty: EASY
+points: 120
+description: |
+  An attacker obfuscated their payload by chaining multiple encoding layers.
+  Unwrap the encoding transformations in sequence to discover the plaintext flag.
+tags:
+  - crypto
+  - encoding
+  - base64
+  - rot13
+flag_format: "CTF{...}"
+flag: "CTF{mult1_lay3r_d3c0d1ng_pr0}"
+hints:
+  - text: "Reversal sequence: URL Decode -> Hex to ASCII -> Base64 Decode -> ROT13."
+    penalty: 10
+files:
+  - payload.txt
+learning_objective: "Differentiate between encryption and encoding, and practice reversing multi-stage encoding chains."
+published: true

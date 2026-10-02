@@ -1,0 +1,22 @@
+name: Suspicious Traffic
+slug: suspicious-traffic
+category: FORENSICS
+difficulty: EASY
+points: 100
+description: |
+  A network intrusion detection system alerted on beaconing behavior from a workstation.
+  Examine the supplied packet capture in Wireshark and extract the exfiltrated flag.
+tags:
+  - forensics
+  - wireshark
+  - pcap
+  - network-analysis
+flag_format: "CTF{...}"
+flag: "CTF{pcap_fl0w_analyz3d_4421}"
+hints:
+  - text: "Filter by http in Wireshark or follow the TCP stream on port 80."
+    penalty: 10
+files:
+  - suspicious_traffic.pcap
+learning_objective: "Learn how to use Wireshark to filter packet streams and reconstruct exfiltrated HTTP payloads."
+published: true

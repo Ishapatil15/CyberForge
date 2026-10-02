@@ -1,0 +1,21 @@
+name: Crack Me
+slug: crack-me
+category: REVERSE_ENGINEERING
+difficulty: EASY
+points: 150
+description: |
+  A secure access terminal checks user input against an obfuscated validation sequence.
+  Analyze the logic in crackme.zip to recover the correct passkey and reveal the flag.
+tags:
+  - reverse-engineering
+  - static-analysis
+  - python-reversing
+flag_format: "CTF{...}"
+flag: "CTF{str1ngs_and_x0r_r3v3rs1ng_619}"
+hints:
+  - text: "Inspect SECRET_XOR in crackme.py or XOR each byte with 0x5A to recover the required key 'CyberForgeKey42'."
+    penalty: 15
+files:
+  - crackme.zip
+learning_objective: "Understand basic binary/script reverse engineering and XOR deobfuscation techniques."
+published: true

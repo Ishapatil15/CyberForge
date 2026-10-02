@@ -1,0 +1,21 @@
+name: Image Secret
+slug: image-secret
+category: STEGANOGRAPHY
+difficulty: EASY
+points: 100
+description: |
+  A digital reconnaissance image contains intelligence concealed within its metadata chunk and trailing file stream.
+  Analyze cyber_artifact.png to extract the hidden flag.
+tags:
+  - steganography
+  - metadata
+  - png-chunks
+flag_format: "CTF{...}"
+flag: "CTF{st3g0_png_chUnk_unc0v3r3d_215}"
+hints:
+  - text: "Use strings or exiftool on cyber_artifact.png to inspect embedded text chunks."
+    penalty: 10
+files:
+  - cyber_artifact.png
+learning_objective: "Understand PNG chunk structure (tEXt) and how to identify data appended beyond the IEND marker."
+published: true

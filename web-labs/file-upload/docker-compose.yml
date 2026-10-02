@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  upload-lab:
+    build: .
+    ports:
+      - '8013:8013'

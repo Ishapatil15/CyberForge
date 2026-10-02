@@ -1,0 +1,60 @@
+[
+  {
+    "id": "tx_101",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/invoices/4091",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.tenant_a"
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "invoice_id": 4091,
+        "amount": 120.5,
+        "client": "Tenant Alpha",
+        "status": "PAID"
+      }
+    }
+  },
+  {
+    "id": "tx_102",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/invoices/4092",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.tenant_a"
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "invoice_id": 4092,
+        "amount": 450.0,
+        "client": "Tenant Alpha",
+        "status": "PENDING"
+      }
+    }
+  },
+  {
+    "id": "tx_103",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/invoices/9999",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.tenant_a"
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "invoice_id": 9999,
+        "amount": 999999.0,
+        "client": "SuperAdmin Escrow",
+        "admin_escrow_key": "CTF{b0la_auth_m1sconf1g_7714}",
+        "audit_note": "Confidential executive escrow account. Access restricted."
+      }
+    }
+  }
+]

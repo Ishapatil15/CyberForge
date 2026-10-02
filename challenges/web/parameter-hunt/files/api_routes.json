@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CyberForge Internal Telemetry API",
+    "version": "2.4.0",
+    "description": "Internal developer specification. Confidential."
+  },
+  "paths": {
+    "/api/v2/telemetry/heartbeat": {
+      "get": {
+        "summary": "Check node status",
+        "responses": {
+          "200": {
+            "description": "Node healthy"
+          }
+        }
+      }
+    },
+    "/api/v2/analytics/query": {
+      "get": {
+        "summary": "Query event streams",
+        "parameters": [
+          {
+            "name": "range",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Query results"
+          }
+        }
+      }
+    },
+    "/api/v2/system/debug": {
+      "get": {
+        "summary": "Internal Diagnostics Gateway",
+        "parameters": [
+          {
+            "name": "developer_override",
+            "in": "query",
+            "description": "Internal bypass key: verify against escrow value CTF{und0cum3nted_param_leak_892}",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Diagnostic dump"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+name: Strange File
+slug: strange-file
+category: MISCELLANEOUS
+difficulty: MEDIUM
+points: 180
+description: |
+  Forensics responders recovered a file mystery.bin with a corrupted header.
+  Analyze the file format structure in a hex editor, repair the magic bytes, and extract the recovery document.
+tags:
+  - misc
+  - file-signatures
+  - magic-bytes
+flag_format: "CTF{...}"
+flag: "CTF{p0lygl0t_m4g1c_byt3s_f1x3d_608}"
+hints:
+  - text: "Look at bytes 3-4 (\x03\x04) and file strings. It is a ZIP file with the first two bytes changed from 'PK' to 'XX'."
+    penalty: 15
+files:
+  - mystery.bin
+learning_objective: "Learn how file magic bytes work, and how to identify and repair corrupted archive headers."
+published: true

@@ -1,0 +1,22 @@
+name: Broken Access
+slug: broken-access
+category: WEB
+difficulty: MEDIUM
+points: 200
+description: |
+  A security analyst captured transaction logs showing a user requesting documents outside their assigned tenancy.
+  Analyze the API trace to identify the unauthorized object reference and extract the leaked administrative key.
+tags:
+  - web
+  - bola
+  - idor
+  - api-security
+flag_format: "CTF{...}"
+flag: "CTF{b0la_auth_m1sconf1g_7714}"
+hints:
+  - text: "Look for invoice IDs that do not belong to Tenant Alpha and inspect the returned JSON response."
+    penalty: 20
+files:
+  - audit_traffic.json
+learning_objective: "Understand Broken Object Level Authorization (BOLA) and how missing tenancy checks compromise sensitive objects."
+published: true

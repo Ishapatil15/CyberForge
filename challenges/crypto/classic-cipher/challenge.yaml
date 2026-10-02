@@ -1,0 +1,21 @@
+name: Classic Cipher
+slug: classic-cipher
+category: CRYPTOGRAPHY
+difficulty: EASY
+points: 100
+description: |
+  An operational memo was encrypted using a polyalphabetic Vigenère cipher with the keyword FORGE.
+  Decrypt the ciphertext to uncover the clearance key.
+tags:
+  - crypto
+  - vigenere
+  - classic-cipher
+flag_format: "CTF{...}"
+flag: "CTF{v1g3n3r3_c1ph3r_unl0ck3d_881}"
+hints:
+  - text: "Use CyberChef or Python to decrypt the Vigenère cipher using key 'FORGE'."
+    penalty: 10
+files:
+  - ciphertext.txt
+learning_objective: "Understand classic polyalphabetic substitution ciphers and Vigenère decryption with a known key."
+published: true

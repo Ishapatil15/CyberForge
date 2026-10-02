@@ -1,0 +1,21 @@
+name: The Forgotten Document
+slug: the-forgotten-document
+category: OSINT
+difficulty: MEDIUM
+points: 180
+description: |
+  Corporate audit logs contain records of a retired backup host.
+  Correlate the decommission memo, internal DNS zone file, and hardware server inventory in audit_records.zip to recover the escrow key.
+tags:
+  - osint
+  - asset-tracking
+  - correlation
+flag_format: "CTF{...}"
+flag: "CTF{d0cum3nt_arch1v3_unh1dd3n_782}"
+hints:
+  - text: "Lookup legacy-backup.internal in dns_zone.txt to find the asset tag, then locate it in server_inventory.csv."
+    penalty: 15
+files:
+  - audit_records.zip
+learning_objective: "Learn to cross-reference multiple organizational artifacts (memos, DNS records, inventory spreadsheets) to track decommissioned assets."
+published: true

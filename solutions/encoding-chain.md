@@ -1,0 +1,11 @@
+# Solution: Encoding Chain
+
+## Objective
+Reverse URL-encoding, Hex, Base64, and ROT13.
+
+## Steps
+1. URL decode `554564546533706f6557637858336c7562444e6c5833457a634442784d57463058324e6c4d48303d` -> `554564546533706f6557637858336c7562444e6c5833457a634442784d57463058324e6c4d48303d`.
+2. Hex decode `554564546533706f6557637858336c7562444e6c5833457a634442784d57463058324e6c4d48303d` -> `UEdTe3poeWcxX3lubDNlX3EzcDBxMWF0X2NlMH0=`.
+3. Base64 decode `UEdTe3poeWcxX3lubDNlX3EzcDBxMWF0X2NlMH0=` -> `PGS{zhyg1_ynl3e_q3p0q1at_ce0}`.
+4. ROT13 decode `PGS{zhyg1_ynl3e_q3p0q1at_ce0}` -> `CTF{mult1_lay3r_d3c0d1ng_pr0}`.
+5. Submit `CTF{mult1_lay3r_d3c0d1ng_pr0}`.

@@ -1,0 +1,21 @@
+name: Incident Logs
+slug: incident-logs
+category: FORENSICS
+difficulty: EASY
+points: 150
+description: |
+  An unknown actor successfully logged into an internal host and executed a staging command.
+  Correlate auth.log, server.log, and application.log to identify the intrusion and decode the payload.
+tags:
+  - forensics
+  - log-analysis
+  - incident-response
+flag_format: "CTF{...}"
+flag: "CTF{l0g_c0rr3lat10n_d3t3ct3d_512}"
+hints:
+  - text: "Find the attacker IP from the accepted SSH login in auth.log, then check application.log for the payload."
+    penalty: 15
+files:
+  - incident_logs.zip
+learning_objective: "Learn to correlate multi-source system logs (authentication, web, application) to reconstruct attack steps."
+published: true

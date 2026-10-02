@@ -1,0 +1,21 @@
+name: Memory Clue
+slug: memory-clue
+category: FORENSICS
+difficulty: MEDIUM
+points: 200
+description: |
+  Investigators dumped the memory space of a suspicious background process.
+  Extract the secret vault authentication token preserved in the process environment segment.
+tags:
+  - forensics
+  - memory-forensics
+  - strings
+flag_format: "CTF{...}"
+flag: "CTF{m3m0ry_str1ngs_unv31l_993}"
+hints:
+  - text: "Run strings on the memory dump and search for CYBERFORGE or VAULT."
+    penalty: 20
+files:
+  - memory_minidump.raw
+learning_objective: "Learn to perform string and environment extraction on raw process memory images."
+published: true

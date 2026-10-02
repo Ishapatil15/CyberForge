@@ -1,0 +1,21 @@
+name: Hidden Header
+slug: hidden-header
+category: WEB
+difficulty: EASY
+points: 100
+description: |
+  A network administrator intercepted a response from an internal staging gateway.
+  Inspect the captured HTTP response artifact to discover the diagnostic authentication token.
+tags:
+  - web
+  - http-headers
+  - curl
+flag_format: "CTF{...}"
+flag: "CTF{h3ad3r_1nspect10n_mast3r}"
+hints:
+  - text: "Inspect all custom HTTP headers beginning with X-."
+    penalty: 10
+files:
+  - response.txt
+learning_objective: "Learn how to inspect raw HTTP response headers and identify unintentionally exposed debug tokens."
+published: true

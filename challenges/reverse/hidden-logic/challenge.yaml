@@ -1,0 +1,21 @@
+name: Hidden Logic
+slug: hidden-logic
+category: REVERSE_ENGINEERING
+difficulty: MEDIUM
+points: 220
+description: |
+  A hardware validation routine enforces licensing keys using a custom arithmetic state transformation.
+  Reverse engineer validator.py in hidden_logic.zip to calculate the valid serial and trigger flag output.
+tags:
+  - reverse-engineering
+  - algorithm-reversal
+  - math
+flag_format: "CTF{...}"
+flag: "CTF{v4l1dat10n_l0g1c_d3c0d3d_941}"
+hints:
+  - text: "Invert the formula: ord(ch) = (TARGET_ARRAY[i] - i * 3) ^ 0x37."
+    penalty: 20
+files:
+  - hidden_logic.zip
+learning_objective: "Learn how to invert linear state transformations and solve serial validation routines."
+published: true

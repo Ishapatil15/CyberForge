@@ -1,0 +1,21 @@
+name: Weak Key
+slug: weak-key
+category: CRYPTOGRAPHY
+difficulty: MEDIUM
+points: 200
+description: |
+  A custom RSA key generator produced primes that are dangerously close to each other.
+  Use Fermat's factorization method to factorize modulus n and decrypt the flag ciphertext.
+tags:
+  - crypto
+  - rsa
+  - fermat-factorization
+flag_format: "CTF{...}"
+flag: "CTF{sm4ll_pr1m3s_br3ak_rsa_339}"
+hints:
+  - text: "Because p and q are close, calculate a = isqrt(n); test if a^2 - n is a square."
+    penalty: 20
+files:
+  - challenge_info.txt
+learning_objective: "Learn how small prime separation vulnerabilities permit instant factorization via Fermat's method."
+published: true
